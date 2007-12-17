@@ -11,7 +11,6 @@ Source0:	http://search.cpan.org/CPAN/authors/id/S/SF/SFINK/%{real_name}-%{versio
 BuildRequires:	perl-devel
 BuildRequires:	perl-Test-Pod
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Human-readable unit-aware calculator
