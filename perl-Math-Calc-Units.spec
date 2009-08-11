@@ -1,5 +1,5 @@
 %define upstream_name    Math-Calc-Units
-%define upstream_version 1.06
+%define upstream_version 1.07
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -19,7 +19,6 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 Human-readable unit-aware calculator
 
 %prep
-
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
@@ -43,4 +42,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/Math/Calc/Units*
 %{_bindir}/ucalc
 %{_mandir}/*/*
-
