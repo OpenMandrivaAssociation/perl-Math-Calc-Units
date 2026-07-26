@@ -1,15 +1,13 @@
 %define upstream_name    Math-Calc-Units
-%define upstream_version 1.07
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	1.07
+Release:	6
 
 Summary:	Human-readable unit-aware calculator
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Math-Calc-Units
-Source0:	https://cpan.metacpan.org/authors/id/S/SF/SFINK/Math-Calc-Units-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SF/SFINK/Math-Calc-Units-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -20,7 +18,7 @@ BuildArch:	noarch
 Human-readable unit-aware calculator.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,8 +44,7 @@ make test
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1.60.0-1mdv2010.0
 + Revision: 401635
-- rebuild using %%perl_convert_version
-- fixed license field
+- rebuild using %1.07 fixed license field
 
 * Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.06-4mdv2009.0
 + Revision: 257795
