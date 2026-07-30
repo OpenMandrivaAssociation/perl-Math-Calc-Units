@@ -2,7 +2,7 @@
 %define upstream_version 1.07
 Name:		perl-%{upstream_name}
 Version:	1.07
-Release:	2
+Release:	3
 
 Summary:	Human-readable unit-aware calculator
 License:	GPL+ or Artistic
